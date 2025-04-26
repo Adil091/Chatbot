@@ -34,16 +34,15 @@ A list of chatbot programs to run like rule based and NLP based
 #### Output
 
 
-## RNN Based Chatbot
-### 🤖 RNN Chatbot – Import/Export Assistant
-
-This is a simple **RNN-style chatbot** that acts as an import/export assistant. It uses a corpus file (`import_export_knowledge.txt`) and natural language processing techniques to understand and respond to user queries intelligently.
+## NLP Based Chatbot
+### 🤖 NLP Chatbot :
+This is a simple **NLP-style chatbot** that acts as an import/export assistant. It uses a corpus file (`import_export_knowledge.txt`) and natural language processing techniques to understand and respond to user queries intelligently.
 
 ---
 
-#### 🔍 Rule-based vs. RNN-style Chatbot
+#### 🔍 Rule-based vs. NLP-style Chatbot
 
-| Rule-Based Chatbot | RNN-Style Chatbot |
+| Rule-Based Chatbot | NLP-Style Chatbot |
 |--------------------|------------------|
 | Works on predefined rules | Learns from patterns in data |
 | Matches keywords to fixed responses | Understands query context |
@@ -69,3 +68,51 @@ This is a simple **RNN-style chatbot** that acts as an import/export assistant. 
 
 #### 📄 Corpus File
 Make sure this file is in the **same directory** as your Python chatbot script.
+
+## RNN Chatbot
+## 🤖 Why Use RNN Instead of CNN for Chatbots?
+
+Chatbots need to understand **language**, which is **sequential**—words depend on each other for meaning. For example:
+
+> “Tom is a good boy. **He** gets good marks.”
+Here, “he” refers to “Tom.” To understand that, we need memory of the earlier words.
+
+### ❌ Why CNN Doesn’t Work Well
+- CNNs treat each input **independently**.
+- They’re great for images, not for text.
+- They **can’t remember** previous words or context.
+
+### ✅ Why RNN Works Better
+- RNNs are designed for **sequential data**.
+- They **remember previous inputs** and use them to understand current ones.
+- Perfect for chatbots where context matters.
+
+---
+
+## 🧠 How AI Chatbot Works (Simple Summary)
+
+- We will give some data, make inferences, and form relationships or functions.
+- Getting the **inference from data** is the job of our neural network.
+- The chatbot uses a trained RNN to **understand input sentences** and generate **meaningful replies**.
+
+---
+
+## 🛠️ How We Use Machine Learning
+
+We train a **neural network** to learn patterns in conversations:
+
+1. Feed in training data (examples of conversations).
+2. Network starts with **random weights**.
+3. It predicts a response and compares it to the correct one.
+4. Using **gradient descent**, it adjusts the weights to improve.
+5. Over time, it learns to give better, more accurate responses.
+
+---
+
+## 🔁 Summary: CNN vs RNN
+
+| Feature     | CNN (Bad for Chatbots) | RNN (Good for Chatbots) |
+|-------------|------------------------|--------------------------|
+| Memory      | ❌ No                  | ✅ Yes                   |
+| Input Type  | Independent            | Sequential               |
+| Context     | ❌ Can't keep          | ✅ Can remember          |
