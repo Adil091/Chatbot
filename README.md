@@ -116,3 +116,4 @@ We train a **neural network** to learn patterns in conversations:
 | Memory      | ❌ No                  | ✅ Yes                   |
 | Input Type  | Independent            | Sequential               |
 | Context     | ❌ Can't keep          | ✅ Can remember          |
+>[!Tip] Try to run the program on google colab and increase the epoch iteration 1400 it will learn better
